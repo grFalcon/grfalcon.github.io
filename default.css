@@ -1,0 +1,370 @@
+body
+{
+background:white;
+}
+
+div
+	{
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	border:none;
+	}
+
+/*---------------------------------------
+ДИВ, содержащий всю страницу
+перемещая его -- перемещаем весь дизайн
+-----------------------------------------*/
+#global
+	{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:1024px;
+	height:768px;
+	padding:0px;
+	overflow:hidden;
+	border:none;
+	border-left:1px solid #12324B;
+	}
+
+/*---------------------------------------
+Логотип
+-----------------------------------------*/
+#logo
+	{
+	width:222px;
+	height:235px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-right:1px solid white;
+	border-bottom:1px solid white;
+
+	}
+	
+/*---------------------------------------
+Область справа от логотипа
+-----------------------------------------*/
+#right_top
+	{
+	width:100%;
+	height:235px;
+	position:absolute;
+	left:223px;
+	top:0px;
+	border-bottom:1px solid white;
+	background:url('images/design/right1.jpg');
+	}
+
+/*---------------------------------------
+Меню Содержит menu_body --собственно меню
+Такая конструкция -- чтоб картинку с мячиком вставить 
+-----------------------------------------*/
+#menu
+	{
+	width:150px;
+	height:365px;
+	position:absolute;
+	left:0px;
+	top:236px;
+	border-bottom:4px solid #103643;
+	border-right:4px solid #103643;
+	/*background-image:url('images/design/logo_bottom.gif');
+	background-repeat:no-repeat;
+	background-position: 0px 0px;*/
+	background-color:white;
+	}
+
+#menu_body
+	{
+	width:150px;
+	height:305px;
+	position:absolute;
+	left:0px;
+	top:60px;
+	border-top:1px solid #12324B;
+	}
+
+/*---------------------------------------
+Содержание. Содержит content_body --собственно текст
+Такая конструкция -- чтоб линия серая могла продолжаться от меню
+-----------------------------------------*/
+#content
+	{
+	width:100%;
+	height:365px;
+	position:absolute;
+	left:153px;
+	top:236px;
+	border-bottom:4px solid #103643;
+	background-image:url('images/design/line.gif');
+	background-repeat:repeat-x;
+	background-position: 0px 0px;
+	background-color:#D5D9E4;
+	overflow:hidden;
+	}
+
+#content_body
+	{
+	width:100%;
+	height:345px;
+	position:absolute;
+	left:10px;
+	top:20px;
+	border:none;
+	overflow:auto;
+	background-color:#D5D9E4;
+	padding-right:10px;
+	}
+
+/*---------------------------------------
+Полоса под содержанием и меню
+-----------------------------------------*/
+#bottom
+	{
+	width:100%;
+	height:20px;
+	position:absolute;
+	left:0px;
+	top:605px;
+	overflow:hidden;
+	border:none;
+	background-image:url('images/design/bottom.gif');
+	background-repeat:repeat-x;
+	background-position: 0px 0px;
+	background-color:white;
+	}
+
+/*---------------------------------------
+ДИВ для адреса (в области справа от логотип)
+-----------------------------------------*/
+#address
+	{
+	position:absolute;
+	width:300px;
+	height:70px;
+	top:160px;
+	left:1px;
+	z-index:100;
+	color:#173148;
+	font-family:arial,tahoma,verdana;
+	font-weight:bold;
+	}
+
+/*---------------------------------------
+ДИВ для текста копирайта
+-----------------------------------------*/
+#copyright
+	{
+	position:absolute;
+	width:250px;
+	height:15px;
+	top:5px;
+	left:10px;
+	z-index:100;
+	color:white;
+	font-family:verdana,arial,tahoma;
+	font-weight:bold;
+	font-size:8pt;
+	}
+a.address
+	{
+	color:#173148;	
+	}
+
+h1,h2,h3,h4
+	{
+	color:#0F3449;
+	font-family:Century Gothic,verdana,tahoma;
+	font-weight:bold;
+	padding-left:10px;
+	}
+
+h1
+	{
+	font-size:14pt;
+	}
+h2
+	{
+	font-size:12pt;
+	}
+h3
+	{
+	font-size:11pt;
+	}
+h4
+	{
+	font-size:10pt;
+	}
+
+div.item
+	{
+	position:absolute;
+	left:0px;
+	width:150px;
+	height:22px;
+	background:white;
+	border-bottom:1px solid #12324B;
+	overflow:hidden;
+	font-weight:bold;
+	font-family:Century Gothic,arial,tahoma;
+	font-size:10pt;
+	padding-left:3px;
+	color:#113541;
+	}
+
+div.item_selected
+	{
+	position:absolute;
+	left:0px;
+	width:150px;
+	height:22px;
+	background:#D6DAE6;
+	border-bottom:1px solid #12324B;
+	overflow:hidden;
+	font-weight:bold;
+	font-family:Century Gothic,arial,tahoma;
+	font-size:10pt;
+	padding-left:3px;
+	}
+div.item_over
+	{
+	position:absolute;
+	left:0px;
+	width:150px;
+	height:22px;
+	background:#E0E3EC;
+	border-bottom:1px solid #12324B;
+	overflow:hidden;
+	font-weight:bold;
+	font-family:Century Gothic,arial,tahoma;
+	font-size:10pt;
+	padding-left:3px;
+	}
+
+a.item
+	{
+	color:#113541;
+	text-decoration:none;
+	font-weight:bold;
+	background:white;
+	font-family:Century Gothic,arial,tahoma;
+	font-size:10pt;
+	}
+a.item_over
+	{
+	color:#113541;
+	text-decoration:none;
+	font-weight:bold;
+	background:#E0E3EC;
+	font-family:Century Gothic,arial,tahoma;
+	font-size:10pt;
+	}
+
+div.popup
+	{
+	position:absolute;
+	left:173px;
+	display:none;
+	z-index:500;
+	border:1px solid navy;
+	border-bottom:none;
+	}
+p
+	{
+	text-align:justify;
+	font-family:arial,verdana,tahoma;
+	font-size:10pt;
+	}
+
+td
+	{
+	font-family:arial,verdana,tahoma;
+	font-size:10pt;
+	}
+table.popup
+	{
+	border:none;
+	}
+
+td.popup
+	{
+	border-bottom:1px solid navy;
+	background:white;
+	font-family:Century Gothic,arial,tahoma;
+	font-size:10pt;
+	}
+td.popup_over
+	{
+	border-bottom:1px solid navy;
+	background:#E0E3EC;
+	font-family:Century Gothic,arial,tahoma;
+	font-size:10pt;
+	}
+
+a.popup
+	{
+	color:#113541;
+	text-decoration:none;
+	font-weight:bold;
+	background:white;
+	font-family:Century Gothic,arial,tahoma;
+	font-size:10pt;
+	}
+a.popup_over
+	{
+	color:#113541;
+	text-decoration:none;
+	font-weight:bold;
+	background:#E0E3EC;
+	font-family:Century Gothic,arial,tahoma;
+	font-size:10pt;
+	}
+
+/*====================
+Списки
+=====================*/
+li
+	{
+	font-family:arial,verdana,tahoma;
+	margin-bottom:3px;
+	font-size:10pt;
+	}
+
+
+
+/*====================
+Маркеры
+=====================*/
+span.marker
+	{
+	background:yellow;
+	color:blue;
+	}
+
+span.marker
+	{
+	background:red;
+	color:white;
+	}
+
+/*====================
+Фотогалерея
+=====================*/
+img.preview
+	{
+	border:none;
+	display:inline;
+	margin-right:7px;
+	margin-bottom:7px;
+	}
+/*----------------------------------
+ оформление формы отпраки сообщения
+------------------------------------*/
+table.feedback
+	{
+	}
+td.feedback
+	{
+	}

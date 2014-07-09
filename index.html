@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /> 
+  <title>Старкаб | Starcab</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+
+  <style type="text/css">
+  body
+	  {
+	  margin:0px;
+	  padding:0px;
+	  background-color:black;
+	  }
+  #start
+	{
+	margin:0px;
+	padding:0px;
+	width:500px;
+	height:500px;
+	position:absolute;
+	display:block;
+	top:0px;
+	left:0px;
+	background-repeat:no-repeat;
+	background-image:url('images/design/start.jpg');
+	background-position:top center;
+	border:none;
+	}
+
+div.lng
+	{
+	margin:0px;
+	padding:0px;
+	position:absolute;	
+	width:150px;
+	height:80px;
+	text-align:center;
+	}
+
+a.lng
+	{
+	color:#173148;
+	font-family:Century Gothic,verdana,tahoma;
+	font-weight:bold;
+	font-size:18px;
+	text-decoration:none;
+	}
+
+  </style>
+
+<script type="text/javascript">
+<!--
+function resize()
+{
+var w=0;
+var h=0;
+if((navigator.appName=='Microsoft Internet Explorer')||(navigator.appName=='Opera'))
+	{
+	w=document.body.clientWidth;
+	h=document.documentElement.clientHeight;
+	}
+if(navigator.appName=='Netscape')
+	{
+	w=window.innerWidth;
+	h=window.innerHeight;
+	}
+
+if(h==null)
+	{
+	h=500;
+	}
+
+if(h==0)
+	{
+	h=500;
+	}
+var div=document.getElementById('start');
+div.style.left=Math.floor(((w-500)/2))+'px';
+div.style.top=Math.floor(((h-500)/2))+'px';
+}
+//-->
+</script>
+
+ </head>
+
+ <body>
+
+<div id="start">
+
+
+
+<div class="lng" style="top:400px;left:0px">
+		 <a href="ukr/"><img src="images/design/ukraine.gif" width="40" height="27" border="0" alt="" /></a>
+		 <br />
+		 <a class="lng" href="ukr/">Укра&iuml;нська</a>
+</div>
+
+<div class="lng" style="top:400px;left:170px">
+		  <a href="eng/"><img src="images/design/great-britain.gif" width="40" height="27" border="0" alt="" /></a>
+		  <br />
+		  <a class="lng" href="eng/">English</a>
+</div>
+
+<div class="lng" style="top:400px;left:350px">
+		  <a href="rus/"><img src="images/design/russian.gif" width="40" height="27" border="0" alt="" /></a>
+		  <br />
+		  <a class="lng" href="rus/">Русский</a>
+</div>
+
+</div>
+
+
+<script type="text/javascript">
+<!--
+	resize();
+	window.onresize=resize;
+//-->
+</script>
+
+ </body>
+</html>
